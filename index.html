@@ -628,7 +628,7 @@
             </div>
             <div class="col-md-8 col-xl-9 order-0 order-md-1">
               <h2 class="mb-3 text-5 text-white text-uppercase text-center text-md-start">Send us a note</h2>
-              <form name="contact" method="POST" data-netlify="true">
+              <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
                 <input type="hidden" name="subject" 
                 value="Sales inquiry from mysitename.netlify.app" />
                 <p>
@@ -640,6 +640,9 @@
                 <p>
                   <label>Message: <textarea name="message"></textarea></label>
                 </p>
+                <div class="col">
+                  <div class="mb-3" data-netlify-recaptcha="true">
+                </div>
                 <p>
                   <button type="submit">Send</button>
                 </p>
