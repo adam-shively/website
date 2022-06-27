@@ -628,8 +628,25 @@
             </div>
             <div class="col-md-8 col-xl-9 order-0 order-md-1">
               <h2 class="mb-3 text-5 text-white text-uppercase text-center text-md-start">Send us a note</h2>
+              <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="subject" 
+                value="Sales inquiry from mysitename.netlify.app" />
+                <p>
+                  <label>Your Name: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                  <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                  <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                  <button type="submit">Send</button>
+                </p>
+              </form>
+              <!--
               <form name="contact" data-netlify="true" id="contact-form" class="form-dark">
-                <!--action="php/mail.php" method="post"-->
+                <!--action="php/mail.php" method="post"
                 <div class="row g-4">
                   <div class="col-xl-6">
                     <input name="name" type="text" class="form-control" required placeholder="Name">
@@ -647,6 +664,7 @@
                     Email</button>
                 </p>
               </form>
+            -->
             </div>
           </div>
         </div>
