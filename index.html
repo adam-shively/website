@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#show").click(function(){
+      $(".desktopApps").show();
+    });
+  });
+</script>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -112,7 +120,6 @@
                   </div>
                   <p class="text-7 fw-500 text-white mb-2 mb-md-3">Welcome</p>
                   <h2 class="text-16 fw-600 text-white mb-2 mb-md-3"><span class="typed"></span></h2>
-                  <p class="text-5 text-light mb-4">based in Leonardtown, Maryland.</p>
                   <a href="#contact" class="btn btn-outline-primary rounded-pill shadow-none smooth-scroll mt-2">Hire
                     Me</a>
                 </div>
@@ -154,7 +161,6 @@
                   <li><span class="fw-600 me-2">Name:</span>Adam Shively</li>
                   <li><span class="fw-600 me-2">Email:</span><a
                       href="mailto:adammshively89@gmail.com">adammshively89@gmail.com</a></li>
-                  <li><span class="fw-600 me-2">Age:</span>33</li>
                   <li class="border-0"><span class="fw-600 me-2">From:</span>Leonardtown, Maryland</li>
                 </ul>
                 <a href="#" class="btn btn-primary rounded-pill">Download CV</a>
@@ -202,8 +208,8 @@
         <div class="container px-lg-5">
           <!-- Heading -->
           <div class="position-relative d-flex text-center mb-5">
-            <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">Services</h2>
-            <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">What I Do?<span
+            <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">What I Do</h2>
+            <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">My Skills<span
                 class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
           </div>
           <!-- Heading end-->
@@ -216,7 +222,8 @@
                     <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i
                         class="fas fa-palette"></i> </div>
                     <h3 class="text-white">Programming Languages</h3>
-                    <p class="text-white-50 mb-0">C#, Java, Python, Javascript, HTML, CSS, SQL.</p>
+                    <p class="text-white-50 mb-0">C#, Java, Python, Javascript, HTML, CSS, SQL. 
+                      You can see examples implementation of these languages in my projects section.</p>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -224,8 +231,9 @@
                     <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i
                         class="fas fa-desktop"></i></div>
                     <h3 class="text-white">Full Stack Web Development</h3>
-                    <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad
-                      mea essent possim iriure.</p>
+                    <p class="text-white-50 mb-0">I use frameworks and design patterns to build web applications. 
+                      You can see examples of my work implementing these in my projects section.
+                    </p>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -233,8 +241,9 @@
                     <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i
                         class="fas fa-pencil-ruler"></i> </div>
                     <h3 class="text-white">Database Development</h3>
-                    <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad
-                      mea essent possim iriure.</p>
+                    <p class="text-white-50 mb-0">Database Development is an important component to web applications.
+                      I use SQL databases in many of my projects.
+                    </p>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -242,28 +251,11 @@
                     <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i
                         class="fas fa-paint-brush"></i> </div>
                     <h3 class="text-white">BootStrap Design &amp; Develop</h3>
-                    <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad
-                      mea essent possim iriure.</p>
+                    <p class="text-white-50 mb-0">The design and layout of any web application is a critical aspect.
+                      I use bootstrap to bring a good look and feel to my projects. </p>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="featured-box style-3 mb-5 mb-md-0">
-                    <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i
-                        class="fas fa-chart-area"></i> </div>
-                    <h3 class="text-white">Business Analysis</h3>
-                    <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad
-                      mea essent possim iriure.</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="featured-box style-3 mb-0">
-                    <div class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"> <i
-                        class="fas fa-bullhorn"></i> </div>
-                    <h3 class="text-white">SEO Marketing</h3>
-                    <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad
-                      mea essent possim iriure.</p>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>
@@ -295,10 +287,10 @@
               </div>
               <div class="bg-dark rounded p-4 mb-4">
                 <p class="badge bg-danger text-2 fw-400">2022</p>
-                <h3 class="text-5 text-white">.NET MVC, C# </h3>
+                <h3 class="text-5 text-white">Full Stack Web Development</h3>
                 <p class="text-primary">Coder Foundry</p>
-                <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea
-                  essent possim iriure.</p>
+                <p class="text-white-50 mb-0">Studied & implemented: C#, HTML, CSS, JavaScript, SQL,
+                  BootStrap Design & Develop, .NET MVC, Postgresql, API consumption, Heroku web services.</p>
               </div>
             </div>
 
@@ -306,25 +298,11 @@
             <div class="col-md-6">
               <h2 class="text-6 text-white fw-600 mb-4">My Experience</h2>
               <div class="bg-dark rounded p-4 mb-4">
-                <p class="badge bg-danger text-2 fw-400">2012 - 2013</p>
-                <h3 class="text-5 text-white">Jr. UI UX Designer</h3>
-                <p class="text-primary">Themeforest</p>
-                <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea
-                  essent possim iriure.</p>
-              </div>
-              <div class="bg-dark rounded p-4 mb-4">
-                <p class="badge bg-danger text-2 fw-400">2014 - 2016</p>
-                <h3 class="text-5 text-white">Jr. Product Designer</h3>
-                <p class="text-primary">Dribbble</p>
-                <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea
-                  essent possim iriure.</p>
-              </div>
-              <div class="bg-dark rounded p-4 mb-4">
-                <p class="badge bg-danger text-2 fw-400">2017 - 2019</p>
-                <h3 class="text-5 text-white">Product Designer</h3>
-                <p class="text-primary">Adobe</p>
-                <p class="text-white-50 mb-0">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea
-                  essent possim iriure.</p>
+                <p class="badge bg-danger text-2 fw-400">2012 - Current</p>
+                <h3 class="text-5 text-white">Department Lead</h3>
+                <p class="text-primary">Giant Foods LLC</p>
+                <p class="text-white-50 mb-0">Supervising and working with employees, merchandise stocking, 
+                  merchandise conditioning, unloading merchandise, and ordering merchandise.</p>
               </div>
             </div>
           </div>
@@ -380,57 +358,100 @@
           <!-- Heading -->
           <div class="position-relative d-flex text-center mb-5">
             <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">Portfolio</h2>
-            <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">My Work<span
+            <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">Projects<span
                 class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
           </div>
           <!-- Heading end-->
 
           <!-- Filter Menu -->
           <ul class="portfolio-menu nav nav-tabs nav-light justify-content-center border-bottom-0 mb-5">
-            <li class="nav-item"> <a data-filter=".projects" class="nav-link active" href="">Projects</a></li>
-            <li class="nav-item"> <a data-filter=".challenges" href="" class="nav-link">Coding Challenges</a></li>
+           <!--  <li class="nav-item"> <a data-filter="*" class="nav-link active" href="">All</a></li> -->
+            <li class="nav-item"> <a data-filter=".webApps" class="nav-link active" href="">Web Apps</a></li>
+            <li class="nav-item"> <a data-filter=".desktopApps" id="show" href="" class="nav-link">Desktop Apps</a></li>
           </ul>
           <!-- Filter Menu end -->
           <!--Projects-->
           <div class="portfolio popup-ajax-gallery">
             <div class="row portfolio-filter g-4">
-              <div class="col-sm-6 col-lg-4 brand projects">
+              <div class="col-sm-6 col-lg-4 brand webApps">
                 <div class="portfolio-box rounded">
-                  <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/project-6.jpg"
+                  <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/tech_savvy_card.png"
                       alt="">
                     <div class="portfolio-overlay"> <a class="popup-ajax stretched-link"
-                        href="ajax/tech-blog.html"></a>
+                        href="ajax/projects-ajax-techblog.html"></a>
                       <div class="portfolio-overlay-details">
-                        <h5 class="text-white fw-400">Project Title 6</h5>
-                        <span class="text-light">Category</span>
+                        <h5 class="text-white fw-400">Tech Savy</h5>
+                        <span class="text-light">A Tech Blog Application</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-4 brand projects">
+              <div class="col-sm-6 col-lg-4 brand webApps">
                 <div class="portfolio-box rounded">
-                  <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/project-6.jpg"
+                  <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/cinedb_card.png"
                       alt="">
                     <div class="portfolio-overlay"> <a class="popup-ajax stretched-link"
-                        href="ajax/portfolio-ajax-project-dark-6.html"></a>
+                        href="ajax/projects-ajax-cinedb.html"></a>
                       <div class="portfolio-overlay-details">
-                        <h5 class="text-white fw-400">Project Title 6</h5>
-                        <span class="text-light">Category</span>
+                        <h5 class="text-white fw-400">CineDB</h5>
+                        <span class="text-light">A Movie Database Application</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-4 brand projects">
+              <div class="col-sm-6 col-lg-4 brand webApps">
                 <div class="portfolio-box rounded">
-                  <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/project-6.jpg"
+                  <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/loan_calc/loan_card.png"
                       alt="">
                     <div class="portfolio-overlay"> <a class="popup-ajax stretched-link"
                         href="ajax/portfolio-ajax-project-dark-6.html"></a>
                       <div class="portfolio-overlay-details">
-                        <h5 class="text-white fw-400">Project Title 6</h5>
-                        <span class="text-light">Category</span>
+                        <h5 class="text-white fw-400">Loan Calc</h5>
+                        <span class="text-light">A Loan Calculator Application</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 brand desktopApps" style="display:none;">
+                <div class="portfolio-box rounded">
+                  <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/traffic/traffic_card.png"
+                      alt="">
+                    <div class="portfolio-overlay"> <a class="popup-ajax stretched-link"
+                        href="ajax/projects-ajax-traffic.html"></a>
+                      <div class="portfolio-overlay-details">
+                        <h5 class="text-white fw-400">Traffic Light Simulator</h5>
+                        <span class="text-light">A Simulated Traffic Light Application</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 brand desktopApps" style="display:none;">
+                <div class="portfolio-box rounded">
+                  <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/search/search_card.png"
+                      alt="">
+                    <div class="portfolio-overlay"> <a class="popup-ajax stretched-link"
+                        href="ajax/projects-ajax-search.html"></a>
+                      <div class="portfolio-overlay-details">
+                        <h5 class="text-white fw-400">Search Party</h5>
+                        <span class="text-light">A Directory/File Searcher Application</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 brand desktopApps" style="display:none;">
+                <div class="portfolio-box rounded">
+                  <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/projects/sudoku/sudoku_logo_card.png"
+                      alt="">
+                    <div class="portfolio-overlay"> <a class="popup-ajax stretched-link"
+                        href="ajax/portfolio-ajax-project-dark-6.html"></a>
+                      <div class="portfolio-overlay-details">
+                        <h5 class="text-white fw-400">Sudoku: Play and Solve</h5>
+                        <span class="text-light">Sudoku Game and Solver Application</span>
                       </div>
                     </div>
                   </div>
@@ -438,7 +459,7 @@
               </div>
               <!--End projects-->
               <!--Coding Challenges-->
-              <div class="col-sm-6 col-lg-4 brand challenges">
+              <!-- <div class="col-sm-6 col-lg-4 brand challenges">
                 <div class="portfolio-box rounded">
                   <div class="portfolio-img rounded">
                     <a href="https://palindrome2.netlify.app/" target="_blank">
@@ -482,7 +503,7 @@
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!--End coding Challenges-->
             </div>
           </div>
@@ -490,85 +511,122 @@
       </section>
       <!-- Portfolio end -->
 
-      <!-- Testimonial
+      <!-- Portfolio
     ============================================= -->
-      <section id="testimonial" class="section bg-dark-1">
-        <div class="container px-lg-5">
-          <!-- Heading -->
-          <div class="position-relative d-flex text-center mb-5">
-            <h2 class="text-24 text-muted opacity-1 text-uppercase fw-600 w-100 mb-0">Testimonial</h2>
-            <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">Client Speak<span
-                class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
-          </div>
-          <!-- Heading end-->
+    <section id="challenges" class="section bg-dark-1">
+      <div class="container px-lg-5">
+        <!-- Heading -->
+        <div class="position-relative d-flex text-center mb-5">
+          <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">Coding</h2>
+          <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">Challenges<span
+              class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+        </div>
+        <!-- Heading end-->
 
-          <div class="owl-carousel owl-light owl-theme" data-loop="true" data-nav="false" data-autoplay="false"
-            data-margin="25" data-stagepadding="0" data-slideby="1" data-items-xs="1" data-items-sm="1"
-            data-items-md="1" data-items-lg="2">
-            <div class="item">
-              <div class="bg-dark rounded p-5">
-                <div class="d-flex align-items-center mt-auto mb-4"> <img
-                    class="img-fluid rounded-circle d-inline-block w-auto" src="images/testimonial/client-sm-3.jpg"
-                    alt="">
-                  <p class="ms-3 mb-0"><strong class="d-block text-white fw-600">Dennis Jacques</strong> <span
-                      class="text-white-50 fw-500">User from USA</span></p>
+        <!-- Filter Menu -->
+        <!-- <ul class="portfolio-menu nav nav-tabs nav-light justify-content-center border-bottom-0 mb-5">
+          <li class="nav-item"> <a data-filter=".projects" class="nav-link active" href="">Projects</a></li>
+          <li class="nav-item"> <a data-filter=".challenges" href="" class="nav-link">Coding Challenges</a></li>
+        </ul> -->
+        <!-- Filter Menu end 
+        <div class="col-sm-6 col-lg-4 brand">
+              <div class="portfolio-box rounded">
+                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/challenges/pal_card.png"
+                    alt="Palindrome Logo">
+                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link"
+                      href="ajax/challenges-ajax-palindrome.html"></a>
+                    <div class="portfolio-overlay-details">
+                      <h5 class="text-white fw-400">Madam, I'm adaM</h5>
+                      <span class="text-light">A Coding Challenge</span>
+                    </div>
+                  </div>
                 </div>
-                <p class="text-light mb-4">“Only trying it out since a few days. But up to now excellent. Seems to work
-                  flawlessly. priced simply dummy text of the printing and typesetting industry.”</p>
-                <span class="text-2"> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i>
-                  <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i
-                    class="fas fa-star text-warning"></i> </span>
               </div>
             </div>
-            <div class="item">
-              <div class="bg-dark rounded p-5">
-                <div class="d-flex align-items-center mt-auto mb-4"> <img
-                    class="img-fluid rounded-circle d-inline-block w-auto" src="images/testimonial/client-sm-1.jpg"
-                    alt="">
-                  <p class="ms-3 mb-0"><strong class="d-block text-white fw-600">Jay Shah</strong> <span
-                      class="text-white-50 fw-500">Founder at Icomatic Pvt Ltd</span></p>
+            
+            <div class="col-sm-6 col-lg-4 brand">
+              <div class="portfolio-box rounded">
+                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/challenges/reverse_card.png"
+                    alt="Palindrome Logo">
+                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link"
+                      href="ajax/challenges-ajax-palindrome.html"></a>
+                    <div class="portfolio-overlay-details">
+                      <h5 class="text-white fw-400">Reverse</h5>
+                      <span class="text-light">A Coding Challenge</span>
+                    </div>
+                  </div>
                 </div>
-                <p class="text-light mb-4">"Easy to use, reasonably priced simply dummy text of the printing and
-                  typesetting industry. Quidam lisque persius interesset his et, in quot quidam possim iriure.”</p>
-                <span class="text-2"> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i>
-                  <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i
-                    class="fas fa-star text-warning"></i> </span>
               </div>
             </div>
-            <div class="item">
-              <div class="bg-dark rounded p-5">
-                <div class="d-flex align-items-center mt-auto mb-4"> <img
-                    class="img-fluid rounded-circle d-inline-block w-auto" src="images/testimonial/client-sm-2.jpg"
-                    alt="">
-                  <p class="ms-3 mb-0"><strong class="d-block text-white fw-600">Patrick Cary</strong> <span
-                      class="text-white-50 fw-500">Freelancer from USA</span></p>
+            <div class="col-sm-6 col-lg-4 brand">
+              <div class="portfolio-box rounded">
+                <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="images/challenges/c0untr_card.png"
+                    alt="Palindrome Logo">
+                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link"
+                      href="ajax/challenges-ajax-palindrome.html"></a>
+                    <div class="portfolio-overlay-details">
+                      <h5 class="text-white fw-400">c0untr</h5>
+                      <span class="text-light">A Coding Challenge</span>
+                    </div>
+                  </div>
                 </div>
-                <p class="text-light mb-4">“I am happy Working with printing and typesetting industry. Quidam lisque
-                  persius interesset his et, in quot quidam persequeris essent possim iriure.”</p>
-                <span class="text-2"> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i>
-                  <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i
-                    class="fas fa-star text-warning"></i> </span>
+              </div>
+            </div>-->
+        <!--Challenges-->
+        <div class="portfolio popup-ajax-gallery">
+          <div class="row g-4">
+            <!--Coding Challenges-->
+            <div class="col-sm-6 col-lg-4 brand challenges">
+              <div class="portfolio-box rounded">
+                <div class="portfolio-img rounded">
+                  <a href="https://palindrome2.netlify.app/" target="_blank">
+                    <img class="img-fluid d-block" src="images/challenges/pal_card.png" alt="c0untr logo">
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-overlay-details">
+                        <h5 class="text-white fw-400">Madam, I'm adaM</h5>
+                        <span class="text-light">A Coding Challenge</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="item">
-              <div class="bg-dark rounded p-5">
-                <div class="d-flex align-items-center mt-auto mb-4"> <img
-                    class="img-fluid rounded-circle d-inline-block w-auto" src="images/testimonial/client-sm-4.jpg"
-                    alt="">
-                  <p class="ms-3 mb-0"><strong class="d-block text-white fw-600">Chris Tom</strong> <span
-                      class="text-white-50 fw-500">User from UK</span></p>
+            <div class="col-sm-6 col-lg-4 brand challenges">
+              <div class="portfolio-box rounded">
+                <div class="portfolio-img rounded">
+                  <a href="https://reverse1.netlify.app/" target="_blank">
+                    <img class="img-fluid d-block" src="images/challenges/reverse_card.png" alt="c0untr logo">
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-overlay-details">
+                        <h5 class="text-white fw-400">Reverse</h5>
+                        <span class="text-light">A Coding Challenge</span>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-                <p class="text-light mb-4">“I have used them twice now. Good rates, very efficient service and priced
-                  simply dummy text of the printing and typesetting industry quidam interesset his et. Excellent.”</p>
-                <span class="text-2"> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i>
-                  <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i
-                    class="fas fa-star text-warning"></i> </span>
               </div>
             </div>
+            <div class="col-sm-6 col-lg-4 brand challenges">
+              <div class="portfolio-box rounded">
+                <div class="portfolio-img rounded">
+                  <a href="https://c0untr.netlify.app/" target="_blank">
+                    <img class="img-fluid d-block" src="images/challenges/c0untr_card.png" alt="c0untr logo">
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-overlay-details">
+                        <h5 class="text-white fw-400">c0untr</h5>
+                        <span class="text-light">A Coding Challenge</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--End coding Challenges-->
           </div>
         </div>
-      </section>
-      <!-- Testimonial end -->
+      </div>
+    </section>
+    <!-- Portfolio end -->
 
       <!-- Contact Me
     ============================================= -->
