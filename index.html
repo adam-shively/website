@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
     $(document).ready(function () {
       $("#show").click(function () {
-        $(".desktopApps").show();
+        $(".xxx").removeClass("hide");
       });
     });
-  </script>
+  </script> -->
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -297,15 +297,16 @@
           <!-- Heading end-->
 
           <!-- Filter Menu -->
-          <ul class="portfolio-menu nav nav-tabs nav-light justify-content-center border-bottom-0 mb-5">
+          <ul class="portfo1lio-menu nav nav-tabs nav-light justify-content-center border-bottom-0 mb-5">
             <!--  <li class="nav-item"> <a data-filter="*" class="nav-link active" href="">All</a></li> -->
-            <li class="nav-item"> <a data-filter=".webApps" class="nav-link active" href="">Web Apps</a></li>
-            <li class="nav-item"> <a data-filter=".desktopApps" id="show" href="" class="nav-link">Desktop Apps</a></li>
+            <li class="nav-item"> <button id="webLink" class="nav-link active" href="">Web Apps</button>
+            </li>
+            <li class="nav-item"> <button id="desktopLink" href="" class="nav-link">Desktop Apps</button></li>
           </ul>
           <!-- Filter Menu end -->
           <!--Projects-->
           <div class="portfolio popup-ajax-gallery">
-            <div class="row portfolio-filter g-4">
+            <div class="row g-4">
               <div class="col-sm-6 col-lg-4 brand webApps">
                 <div class="portfolio-box rounded">
                   <div class="portfolio-img rounded"> <img class="img-fluid d-block"
@@ -348,7 +349,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-4 brand desktopApps" style="display:none;">
+
+              <div class="col-sm-6 col-lg-4 brand desktopApps hide">
                 <div class="portfolio-box rounded">
                   <div class="portfolio-img rounded"> <img class="img-fluid d-block"
                       src="images/projects/traffic/traffic_card.png" alt="">
@@ -362,7 +364,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-4 brand desktopApps" style="display:none;">
+              <div class="col-sm-6 col-lg-4 brand desktopApps hide">
                 <div class="portfolio-box rounded">
                   <div class="portfolio-img rounded"> <img class="img-fluid d-block"
                       src="images/projects/search/search_card.png" alt="">
@@ -376,7 +378,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-4 brand desktopApps" style="display:none;">
+              <div class="col-sm-6 col-lg-4 brand desktopApps hide">
                 <div class="portfolio-box rounded">
                   <div class="portfolio-img rounded"> <img class="img-fluid d-block"
                       src="images/projects/sudoku/sudoku_logo_card.png" alt="">
@@ -493,8 +495,8 @@
                 </div>
                 <div class="row">
                   <p class="text-center mt-4 mb-5 col-6">
-                    <button id="submit-btn" class="btn btn-primary rounded-pill d-inline-flex "
-                      type="submit">Send Message</button></p>
+                    <button id="submit-btn" class="btn btn-primary rounded-pill d-inline-flex " type="submit">Send
+                      Message</button></p>
                 </div>
               </form>
             </div>
@@ -523,8 +525,8 @@
           </div>
           <div class="col-md-4 text-md-end small d-flex justify-content-center">
             <p class="text-center" style="font-size:large;"><span class="text-primary me-2"><a
-              href="mailto:adammshively89@gmail.com" title="Send me an email">
-              <i class="fas fa-envelope"></i></span>adammshively89@gmail.com</a></p>
+                  href="mailto:adammshively89@gmail.com" title="Send me an email">
+                  <i class="fas fa-envelope"></i></span>adammshively89@gmail.com</a></p>
           </div>
         </div>
       </div>
@@ -539,7 +541,26 @@
   <a id="back-to-top" class="rounded-circle" data-bs-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
       class="fa fa-chevron-up"></i></a>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#webLink").click(function () {
+        $("#webLink").addClass("active");
+        $("#desktopLink").removeClass("active");
+        $(".webApps").removeClass("hide");
+        $(".desktopApps").addClass("hide");
+      });
+    });
 
+    $(document).ready(function () {
+      $("#desktopLink").click(function () {
+        $("#desktopLink").addClass("active");
+        $("#webLink").removeClass("active");
+        $(".webApps").addClass("hide");
+        $(".desktopApps").removeClass("hide");
+      });
+    });
+  </script>
 
   <!-- JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>

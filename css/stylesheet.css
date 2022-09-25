@@ -3601,7 +3601,13 @@ input:-internal-autofill-selected {
   border-radius: 4px 0px 0px 4px;
 }
 
+/* custom */
+
 .icon-list-social>a:hover {
   opacity: 0.9 !important;
   color: #20c997 !important;
+}
+
+.hide {
+  display: none;
 }
