@@ -3600,3 +3600,8 @@ input:-internal-autofill-selected {
   left: -40px;
   border-radius: 4px 0px 0px 4px;
 }
+
+.icon-list-social>a:hover {
+  opacity: 0.9 !important;
+  color: #20c997 !important;
+}
